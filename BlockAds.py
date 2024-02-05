@@ -41,7 +41,7 @@ def main():
     bold_font = ("Helvetica", 12, "bold")
     spacer_label = tk.Label(app, fg="#dadf49", bg="#252526").pack()
     input_label = tk.Label(
-        app, text="Youtube BlockAds:", font=bold_font, fg="white", bg="#252526"
+        app, text="Youtube BlockAds", font=bold_font, fg="white", bg="#252526"
     )
     input_label.pack()
     # url = tk.Entry(app, width=35, font=normal_font, justify="center", borderwidth=3)
@@ -85,7 +85,7 @@ def main():
         app, textvariable=err_msg, fg="#dadf49", bg="#252526", font=normal_font
     )
     warning_label.pack()
-    spacer_label = tk.Label(app, text="IPMCCD by @Dev_Kauan", fg="#dadf49", bg="#252526").pack()
+    spacer_label = tk.Label(app, text="@Dev_Kauan", fg="#dadf49", bg="#252526").pack()
 
     threading.Thread(target=monitorar_area_transferencia).start()
     app.mainloop()
